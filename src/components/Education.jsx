@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Reveal from "./Reveal";
 
 const education = [
   {
@@ -24,7 +25,6 @@ const Education = () => {
       <motion.div className="space-y-8" initial="hidden" animate="visible">
         {education.map((edu, index) => (
           <motion.div
-            key={index}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.3 }}
@@ -32,12 +32,14 @@ const Education = () => {
             className="max-w-[600px] mx-auto border border-purple-600 rounded-lg p-6 shadow-md  hover:shadow-xl transition-shadow duration-300 bg-purple-700/10
              "
           >
-            <h2 className="text-gray-100 text-2xl font-semibold">
-              {edu.School}
-            </h2>
-            <p className="text-gray-300">{edu.studyProgram}</p>
-            <p className="text-gray-400  ">{edu.finalGPA}</p>
-            <p className="text-gray-400 mt-4 ">{edu.period}</p>
+            <Reveal key={index}>
+              <h2 className="text-gray-100 text-2xl font-semibold">
+                {edu.School}
+              </h2>
+              <p className="text-gray-300">{edu.studyProgram}</p>
+              <p className="text-gray-400  ">{edu.finalGPA}</p>
+              <p className="text-gray-400 mt-4 ">{edu.period}</p>
+            </Reveal>
           </motion.div>
         ))}
       </motion.div>

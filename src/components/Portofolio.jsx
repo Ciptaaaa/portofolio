@@ -1,6 +1,7 @@
-import { AiFillGithub, AiOutlineGithub } from "react-icons/ai";
+import { AiOutlineGithub } from "react-icons/ai";
 import project1 from "../assets/project-1.png";
 import project2 from "../assets/project-2 .png";
+import project3 from "../assets/project-3.png";
 import Reveal from "./Reveal";
 
 const Portofolio = () => {
@@ -23,6 +24,16 @@ const Portofolio = () => {
       links: {
         site: "https://videobelajar-cipta.vercel.app",
         github: "https://github.com/Ciptaaaa/VideoBelajar",
+      },
+    },
+    {
+      img: project3,
+      tittle: "Qtime (Quiz Time)",
+      description:
+        "Qtime Website With React, TypeScript, StyledCSS, Fetch API, TriviaDB API (Front-End) ",
+      links: {
+        site: "https://quizitime.netlify.app",
+        github: "https://github.com/Ciptaaaa/QTime-Quiz-Time-",
       },
     },
   ];
