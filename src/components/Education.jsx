@@ -14,10 +14,16 @@ const education = [
     period: "2019-2024",
     finalGPA: "3.66 out of 4 ",
   },
+  {
+    School: "Bootcamp HariSenin.com",
+    studyProgram: "FullStack Web Developer",
+    period: "2024-2025 (4month)",
+    finalGPA: "3.66 out of 4 ",
+  },
 ];
 const Education = () => {
   return (
-    <div className="p-8">
+    <div className="p-8" id="education">
       <h1 className="text-4xl text-gray-200 font-bold text-center mb-12">
         {" "}
         Education

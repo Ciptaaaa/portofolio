@@ -33,17 +33,22 @@ const Navbar = () => {
         <ul className=" hidden md:flex gap-10 z-10 cursor-pointer">
           <li>
             <Link to="skills" smooth={true} offset={50} duration={500}>
-              About
+              Skills
             </Link>
           </li>
           <li>
-            <Link to="portofolio" smooth={true} offset={50} duration={500}>
-              Portofolio
+            <Link to="project" smooth={true} offset={50} duration={500}>
+              Project
             </Link>{" "}
           </li>
           <li>
             <Link to="certificate" smooth={true} offset={50} duration={500}>
               Certificate
+            </Link>{" "}
+          </li>
+          <li>
+            <Link to="education" smooth={true} offset={50} duration={500}>
+              Education
             </Link>{" "}
           </li>
           <li>
